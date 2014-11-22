@@ -15,15 +15,17 @@ Group:		Development/Libraries
 Source0:	http://pypi.python.org/packages/source/a/%{module}/%{module}-%{version}.tar.gz
 # Source0-md5:	5caa8442fd3a84a5ad0155a1f626ef1d
 URL:		http://pypi.python.org/pypi/arrow
+BuildRequires:	rpm-pythonprov
+%if %{with python2}
 BuildRequires:	python-chai
 BuildRequires:	python-dateutil
-BuildRequires:	python-devel
+BuildRequires:	python-distribute
+BuildRequires:	python-modules
 BuildRequires:	python-six
+%endif
 %if %{with python3}
-BuildRequires:	python3-chai
-BuildRequires:	python3-dateutil
-BuildRequires:	python3-devel
-BuildRequires:	python3-six
+BuildRequires:	python3-distribute
+BuildRequires:	python3-modules
 %endif
 Requires:	python-dateutil
 Requires:	python-six
