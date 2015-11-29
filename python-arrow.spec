@@ -15,6 +15,7 @@ Group:		Development/Libraries
 Source0:	http://pypi.python.org/packages/source/a/%{module}/%{module}-%{version}.tar.gz
 # Source0-md5:	5caa8442fd3a84a5ad0155a1f626ef1d
 URL:		http://pypi.python.org/pypi/arrow
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	rpm-pythonprov
 %if %{with python2}
 BuildRequires:	python-chai
