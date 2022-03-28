@@ -25,7 +25,6 @@ BuildRequires:	python-modules
 BuildRequires:	python-six
 %endif
 %if %{with python3}
-BuildRequires:	python3-distribute
 BuildRequires:	python3-modules
 %endif
 Requires:	python-dateutil
